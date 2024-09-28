@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #00050D;
+    padding: 10px 20px;
+}
+.navbar .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.navbar .nav-links .divider {
+    height: 20px;
+    width: 1px;
+    background-color: #555;
+    margin: 0 10px;
+}
+.navbar .nav-icons {
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-icons i {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.navbar .nav-icons .profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #555;
+    margin: 0 10px;
+}
+.navbar .join-button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.home_heading{
+    color: white;
+    margin-left: 5%;
+}
+.home_sub_heading{
+    color: white;
+    margin-left: 5%;
+}
+.sign_in_btn{
+    font-size: 20px;
+    margin-left: 5%;
+}
+.home_lastsec_txt{
+    color: #000;
+}
+.channels_img:hover{
+    box-shadow: 0px 5px 5px 5px #040404c5;
+}
+
+/* Basic Styling for Cards */
+.hover-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Increase the height and scale on hover */
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    height: 450px; /* Increased height on hover */
+    border-radius: 5px;
+}
+
+/* Initially hide the card body */
+.hover-card .card-body {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth opacity transition */
+}
+
+/* Display the card body on hover */
+.hover-card:hover .card-body {
+    display: block;
+    opacity: 1; /* Smooth fade-in effect */
+}
+
+/* Hide text initially */
+.hover-card .card-text {
+    max-height: 3.6em;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* Show the full content of the text on hover */
+.hover-card:hover .card-text {
+    max-height: 10em; /* Adjust based on the length of text */
+}
+
+/* Image Styling */
+.hover-card .card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom the image slightly on hover */
+.hover-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Card Title Styling */
+.hover-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change color of title on hover */
+.hover-card:hover .card-title {
+    color: #ff5733; /* Custom highlight color on hover */
+}
+
+/* Add smooth transition for background color */
+.hover-card .card-body {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hover-card:hover .card-body {
+    background-color: #f8f9fa;
+}
+
+/* Optional: Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+    .hover-card {
+        height: auto;
+    }
+    .hover-card:hover {
+        height: auto;
+    }
+}
